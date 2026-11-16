@@ -44,33 +44,33 @@
     <div class="container">
         <!-- Pantalla Inicial -->
         <div id="welcome-screen">
-            <h1>¡Feliz Cumpleaños! 🎉</h1>
-            <p>Tienes una sorpresa esperándote aquí abajo. Tócala para abrirla.</p>
+            <h1>¡Feliz Cumpleaños brocito! 🎉</h1>
+            <p>Tienes una sorpresa esperándote aquí abajo :3 Tócala para abrirla.</p>
             <div class="gift-box" onclick="openGift()">🎁</div>
-            <div class="tap-text">¡Toca la caja!</div>
+            <div class="tap-text">¡Toca la cajita!</div>
         </div>
 
         <!-- Pantalla del Premio -->
         <div id="prize-screen" class="hidden">
             <div class="coupon-card">
-                <div class="coupon-header">Bono de Cumpleaños VIP</div>
-                <div class="amount">$30 USD</div>
-                <p style="color: #fff; font-size: 0.9rem; margin-bottom: 10px;">¡Para que te des un gran gusto hoy!</p>
+                <div class="coupon-header">Bono de Cumpleañero</div>
+                <div class="amount">$30 pesitos</div>
+                <p style="color: #fff; font-size: 0.9rem; margin-bottom: 10px;">¡Para que te des un gran gustito hoy!</p>
                 <div class="code-box">CÓDIGO: HB-BRO-30</div>
             </div>
 
             <div class="options-container">
-                <label for="gift-choice">¿En qué vas a gastar tu bono?</label>
+                <label for="gift-choice">¿En qué vas a gastar tu bonito :3 ?</label>
                 <select id="gift-choice">
-                    <option value="Comida o antojos 🍔">Comida o antojos 🍔</option>
-                    <option value="Videojuegos o tecnología 🎮">Videojuegos o tecnología 🎮</option>
-                    <option value="Ropa o accesorios 👕">Ropa o accesorios 👕</option>
-                    <option value="Una salida a pasear 🥤">Una salida a pasear 🥤</option>
-                    <option value="Ahorro para algo grande 💰">Ahorro para algo grande 💰</option>
+                    <option value="Comida o antojos 🍔">Comidita o antojos 🍔</option>
+                    <option value="Videojuegos o tecnología 🎮">tecnología 🎮</option>
+                    <option value="Ropa o accesorios 👕">Ropita o accesorios 👕</option>
+                    <option value="Una salida a pasear 🥤">Una salidita a pasear 🥤</option>
+                    <option value="Ahorro para algo grande 💰">Ahorrar para alguito mas 💰</option>
                 </select>
 
                 <button class="whatsapp-btn" onclick="claimPrize()">
-                    <span>📩 Canjear mis $30 con Gaby</span>
+                    <span>📩 Canjear mis $30 con Almi y Gaby</span>
                 </button>
             </div>
         </div>
@@ -88,7 +88,7 @@
 
         function claimPrize() {
             const choice = document.getElementById('gift-choice').value;
-            const message = `¡Hola! Ya abrí mi regalo de cumpleaños 🎁. Canjeo mi bono de $30 USD (Código: HB-BRO-30) y lo quiero usar en: ${choice}`;
+            const message = `¡Holis! Ya abrí mi regalo de cumpleaños 🎁. Canjeo mi bono de $30 pesitos (Código: HB-BROCITO-30) y lo quiero usar en: ${choice}`;
             // Como está en celular, esto abrirá WhatsApp directamente para enviártelo a ti
             window.location.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
         }
